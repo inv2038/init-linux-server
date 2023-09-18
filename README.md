@@ -10,4 +10,7 @@ git clone https://github.com/inv2038/init-linux-server/init_linux_server.bash in
 ```
 wget https://github.com/inv2038/init-linux-server/blob/main/init_linux_server.bash
 ```
+```
+wget https://raw.githubusercontent.com/inv2038/init-linux-server/main/init_linux_server.bash
+```
 
