@@ -57,13 +57,15 @@ nnoremap <CR> i<Right><CR><ESC>
 nnoremap <BS> i<BS><Right><ESC>
 function! WinMove(key)
     let t:curwin = winnr()
-        exec \"wincmd \".a:key
-        if (t:curwin == winnr())
-            if (match(a:key,'[jk]'))
+    exec \"wincmd \".a:key
+
+    if (t:curwin == winnr())
+        if (match(a:key,'[jk]'))
             wincmd v
-                else
-                        wincmd s
+        else
+            wincmd s
         endif
+
         exec \"wincmd \".a:key
     endif
 endfunction
