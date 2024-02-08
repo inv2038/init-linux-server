@@ -55,25 +55,6 @@ nnoremap ,<Space> :nohlsearch<CR>
 imap jk <Esc>
 nnoremap <CR> i<Right><CR><ESC>
 nnoremap <BS> i<BS><Right><ESC>
-function! WinMove(key)
-    let t:curwin = winnr()
-    exec \"wincmd \".a:key
-
-    if (t:curwin == winnr())
-        if (match(a:key,'[jk]'))
-            wincmd v
-        else
-            wincmd s
-        endif
-
-        exec \"wincmd \".a:key
-    endif
-endfunction
-
-nnoremap <A-h> :call WinMove('h')<CR>
-nnoremap <A-j> :call WinMove('j')<CR>
-nnoremap <A-k> :call WinMove('k')<CR>
-nnoremap <A-l> :call WinMove('l')<CR>
 
 let g:netrw_liststyle = 3
 \" let g:netrw_browse_split = 3
