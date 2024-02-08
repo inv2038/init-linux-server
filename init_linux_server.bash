@@ -26,7 +26,8 @@ filetype on
 let python_highlight_all=1
 set mouse=a
 set mousemodel=popup_setpos
-set nowrap
+set wrap
+set cursorline
 set linebreak
 \"  Indentations
 set tabstop=4
