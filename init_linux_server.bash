@@ -6,6 +6,7 @@ sudo apt-get install -y tmux neovim git
 echo "set -g mouse on
 
 set -g base-index 1
+set-option -g renumber-windows on
 
 unbind C-b
 set-option -g prefix M-b
